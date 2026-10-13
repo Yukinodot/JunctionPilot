@@ -1,0 +1,30 @@
+{
+  "maps": 200,
+  "queries": 600,
+  "feasible_maps": 68,
+  "seed_range": [
+    0,
+    199
+  ],
+  "python": "3.12.14",
+  "calibration": {
+    "speed_mm_s": 300,
+    "left_ms": 850,
+    "right_ms": 650,
+    "uturn_ms": 1600,
+    "settle_ms": 100,
+    "vehicle_width_mm": 150,
+    "clearance_mm": 20,
+    "risk_penalty_ms": 8000
+  },
+  "fastest_vs_distance_mean_nominal_time_reduction": 0.04021559753716153,
+  "fastest_vs_distance_improved_maps": 24,
+  "robust_lower_risk_than_fastest_maps": 26,
+  "planning_median_ms": {
+    "distance": 0.17995,
+    "fastest": 0.1633,
+    "robust": 0.16110000000000002
+  },
+  "evidence_scope": "Synthetic graph simulation only; no physical track, perception, or motor run",
+  "risk_note": "Hand-assigned edge scores; independent-event probability shown only as a model assumption"
+}

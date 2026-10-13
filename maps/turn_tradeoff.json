@@ -1,0 +1,19 @@
+{
+  "title": "转弯成本与路线选择（自建练习图）",
+  "nodes": [
+    {"id":"S","x":0,"y":0},{"id":"A","x":1,"y":0},
+    {"id":"B","x":1,"y":1},{"id":"C","x":2,"y":1},
+    {"id":"D","x":2,"y":2},{"id":"G","x":3,"y":2},
+    {"id":"U","x":0,"y":3},{"id":"V","x":3,"y":3}
+  ],
+  "edges": [
+    {"src":"S","dst":"A","length_mm":200,"risk_permille":5,"bidirectional":true},
+    {"src":"A","dst":"B","length_mm":200,"risk_permille":5,"bidirectional":true},
+    {"src":"B","dst":"C","length_mm":200,"risk_permille":5,"bidirectional":true},
+    {"src":"C","dst":"D","length_mm":200,"risk_permille":5,"bidirectional":true},
+    {"src":"D","dst":"G","length_mm":200,"risk_permille":5,"bidirectional":true},
+    {"src":"S","dst":"U","length_mm":450,"risk_permille":120,"bidirectional":true},
+    {"src":"U","dst":"V","length_mm":550,"risk_permille":150,"bidirectional":true},
+    {"src":"V","dst":"G","length_mm":150,"risk_permille":5,"bidirectional":true}
+  ]
+}

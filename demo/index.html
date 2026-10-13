@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>JunctionPilot · 小车路径实验室</title><link rel="stylesheet" href="style.css"></head>
+<body><main>
+<header><a href="https://github.com/Yukinodot/JunctionPilot">J<span>↗</span> JunctionPilot</a><span>NUEDC INSPIRED / ROUTING LAB</span></header>
+<section class="intro"><div><p class="eyebrow">小车路径实验室</p><h1>把转弯成本，<br>算进每一次路径选择。</h1><p>比较最短距离、预计最快与风险加权路线。点击道路设置阻塞，在确认的路口重新选择路径。</p></div><div class="scope"><strong>仿真模型</strong><p>位置 + 车头方向<br>道路宽度 + 转弯耗时</p><small>自建拓扑练习图，图形距离不按比例。<br>时间与风险来自设定值，尚未进行实车验证。</small></div></section>
+<section class="workspace"><aside>
+<h2>规划参数</h2>
+<label for="map">练习地图</label><select id="map"></select>
+<label for="policy">选择策略</label><select id="policy"><option value="distance">最短距离</option><option value="fastest" selected>预计最快</option><option value="robust">风险加权</option></select>
+<div class="split"><div><label for="heading">起始车头</label><select id="heading"><option value="0">北 N</option><option value="1" selected>东 E</option><option value="2">南 S</option><option value="3">西 W</option></select></div><div><label for="goal">目的节点</label><select id="goal"></select></div></div>
+<label for="left">左转耗时 <output id="left-value">850</output> ms</label><input type="range" id="left" min="0" max="2500" step="50" value="850">
+<label for="right">右转耗时 <output id="right-value">650</output> ms</label><input type="range" id="right" min="0" max="2500" step="50" value="650">
+<label for="risk">风险权重 <output id="risk-value">8000</output> ms</label><input type="range" id="risk" min="0" max="20000" step="500" value="8000">
+<button id="step">行驶到下一路口</button><button class="secondary" id="return">切换到返航任务</button><button class="secondary" id="reset">重置到起点</button>
+<p class="hint">动画仅表示一次路段执行，按固定时长示意播放。控件修改会暂停动作。路段中停下后需要先确认位置。</p>
+<div id="localization" hidden><label for="pose-node">确认所在路口</label><select id="pose-node"></select><label for="pose-heading">确认车头</label><select id="pose-heading"><option value="0">北 N</option><option value="1">东 E</option><option value="2">南 S</option><option value="3">西 W</option></select><button id="confirm-pose">确认位置并重规划</button></div>
+</aside><div class="map-panel"><div class="map-title"><span id="title"></span><span id="pose"></span></div><svg id="map-svg" role="group" aria-label="可点击道路的路径地图"></svg><div class="legend"><span><i class="blue"></i>选中路线</span><span><i class="red"></i>阻塞</span><span><i class="yellow"></i>高风险设定</span><span><i class="car"></i>小车</span></div><p id="status" role="status" aria-live="polite"></p><div class="numbers"><div><small>路线长度</small><strong id="distance">—</strong></div><div><small>名义时间</small><strong id="time">—</strong></div><div><small>转弯次数</small><strong id="turns">—</strong></div></div><p class="hint">道路标注：长度 mm / 风险分数 ‰。地图展示拓扑关系，宽度检查使用道路属性。</p></div></section>
+<section class="compare"><div class="section-heading"><h2>从当前位置比较策略</h2><p>同一张图、同一车头与相同通行约束</p></div><table><thead><tr><th>策略</th><th>路线</th><th>长度</th><th>转弯</th><th>名义时间</th><th>风险分数之和</th></tr></thead><tbody id="comparison"></tbody></table></section>
+<section class="events"><div class="section-heading"><h2>动作与重规划记录</h2><p>确认位置后发指令，地图版本改变后拒绝旧路线</p></div><div id="event-log" aria-live="polite"></div></section>
+<footer><span>JunctionPilot · Python / C / JavaScript</span><a href="../README.md">运行说明</a><a href="../docs/HARDWARE.md">硬件接入</a><a href="../reports/RESULTS.md">仿真报告</a></footer>
+</main><script src="planner.js"></script><script src="data.js"></script><script src="app.js"></script></body></html>

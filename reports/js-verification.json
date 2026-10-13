@@ -1,0 +1,6 @@
+{
+  "queries": 600,
+  "all_matched": true,
+  "node": "v24.19.0",
+  "scope": "Exact routes and integer costs against saved Python runs"
+}

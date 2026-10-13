@@ -1,0 +1,339 @@
+[
+  {
+    "map": "risk_detour.json",
+    "routes": {
+      "distance": {
+        "start": "S",
+        "goal": "G",
+        "start_heading": 1,
+        "policy": "distance",
+        "revision": 0,
+        "cost": 400,
+        "steps": [
+          {
+            "src": "S",
+            "dst": "C",
+            "heading": 1,
+            "action": "STRAIGHT",
+            "travel_ms": 667,
+            "turn_ms": 0,
+            "risk_cost_ms": 2400,
+            "length_mm": 200,
+            "risk_permille": 300
+          },
+          {
+            "src": "C",
+            "dst": "G",
+            "heading": 1,
+            "action": "STRAIGHT",
+            "travel_ms": 667,
+            "turn_ms": 0,
+            "risk_cost_ms": 2400,
+            "length_mm": 200,
+            "risk_permille": 300
+          }
+        ],
+        "nominal_time_ms": 1334,
+        "distance_mm": 400,
+        "turn_count": 0,
+        "risk_proxy": 600,
+        "assumed_failure_probability": 0.51,
+        "cost_unit": "mm"
+      },
+      "fastest": {
+        "start": "S",
+        "goal": "G",
+        "start_heading": 1,
+        "policy": "fastest",
+        "revision": 0,
+        "cost": 1334,
+        "steps": [
+          {
+            "src": "S",
+            "dst": "C",
+            "heading": 1,
+            "action": "STRAIGHT",
+            "travel_ms": 667,
+            "turn_ms": 0,
+            "risk_cost_ms": 2400,
+            "length_mm": 200,
+            "risk_permille": 300
+          },
+          {
+            "src": "C",
+            "dst": "G",
+            "heading": 1,
+            "action": "STRAIGHT",
+            "travel_ms": 667,
+            "turn_ms": 0,
+            "risk_cost_ms": 2400,
+            "length_mm": 200,
+            "risk_permille": 300
+          }
+        ],
+        "nominal_time_ms": 1334,
+        "distance_mm": 400,
+        "turn_count": 0,
+        "risk_proxy": 600,
+        "assumed_failure_probability": 0.51,
+        "cost_unit": "ms"
+      },
+      "robust": {
+        "start": "S",
+        "goal": "G",
+        "start_heading": 1,
+        "policy": "robust",
+        "revision": 0,
+        "cost": 5278,
+        "steps": [
+          {
+            "src": "S",
+            "dst": "A",
+            "heading": 0,
+            "action": "LEFT",
+            "travel_ms": 667,
+            "turn_ms": 950,
+            "risk_cost_ms": 40,
+            "length_mm": 200,
+            "risk_permille": 5
+          },
+          {
+            "src": "A",
+            "dst": "B",
+            "heading": 1,
+            "action": "RIGHT",
+            "travel_ms": 667,
+            "turn_ms": 750,
+            "risk_cost_ms": 40,
+            "length_mm": 200,
+            "risk_permille": 5
+          },
+          {
+            "src": "B",
+            "dst": "D",
+            "heading": 1,
+            "action": "STRAIGHT",
+            "travel_ms": 667,
+            "turn_ms": 0,
+            "risk_cost_ms": 40,
+            "length_mm": 200,
+            "risk_permille": 5
+          },
+          {
+            "src": "D",
+            "dst": "G",
+            "heading": 2,
+            "action": "RIGHT",
+            "travel_ms": 667,
+            "turn_ms": 750,
+            "risk_cost_ms": 40,
+            "length_mm": 200,
+            "risk_permille": 5
+          }
+        ],
+        "nominal_time_ms": 5118,
+        "distance_mm": 800,
+        "turn_count": 3,
+        "risk_proxy": 20,
+        "assumed_failure_probability": 0.01985049937499994,
+        "cost_unit": "ms"
+      }
+    }
+  },
+  {
+    "map": "turn_tradeoff.json",
+    "routes": {
+      "distance": {
+        "start": "S",
+        "goal": "G",
+        "start_heading": 1,
+        "policy": "distance",
+        "revision": 0,
+        "cost": 1000,
+        "steps": [
+          {
+            "src": "S",
+            "dst": "A",
+            "heading": 1,
+            "action": "STRAIGHT",
+            "travel_ms": 667,
+            "turn_ms": 0,
+            "risk_cost_ms": 40,
+            "length_mm": 200,
+            "risk_permille": 5
+          },
+          {
+            "src": "A",
+            "dst": "B",
+            "heading": 0,
+            "action": "LEFT",
+            "travel_ms": 667,
+            "turn_ms": 950,
+            "risk_cost_ms": 40,
+            "length_mm": 200,
+            "risk_permille": 5
+          },
+          {
+            "src": "B",
+            "dst": "C",
+            "heading": 1,
+            "action": "RIGHT",
+            "travel_ms": 667,
+            "turn_ms": 750,
+            "risk_cost_ms": 40,
+            "length_mm": 200,
+            "risk_permille": 5
+          },
+          {
+            "src": "C",
+            "dst": "D",
+            "heading": 0,
+            "action": "LEFT",
+            "travel_ms": 667,
+            "turn_ms": 950,
+            "risk_cost_ms": 40,
+            "length_mm": 200,
+            "risk_permille": 5
+          },
+          {
+            "src": "D",
+            "dst": "G",
+            "heading": 1,
+            "action": "RIGHT",
+            "travel_ms": 667,
+            "turn_ms": 750,
+            "risk_cost_ms": 40,
+            "length_mm": 200,
+            "risk_permille": 5
+          }
+        ],
+        "nominal_time_ms": 6735,
+        "distance_mm": 1000,
+        "turn_count": 4,
+        "risk_proxy": 25,
+        "assumed_failure_probability": 0.02475124687812491,
+        "cost_unit": "mm"
+      },
+      "fastest": {
+        "start": "S",
+        "goal": "G",
+        "start_heading": 1,
+        "policy": "fastest",
+        "revision": 0,
+        "cost": 6284,
+        "steps": [
+          {
+            "src": "S",
+            "dst": "U",
+            "heading": 0,
+            "action": "LEFT",
+            "travel_ms": 1500,
+            "turn_ms": 950,
+            "risk_cost_ms": 960,
+            "length_mm": 450,
+            "risk_permille": 120
+          },
+          {
+            "src": "U",
+            "dst": "V",
+            "heading": 1,
+            "action": "RIGHT",
+            "travel_ms": 1834,
+            "turn_ms": 750,
+            "risk_cost_ms": 1200,
+            "length_mm": 550,
+            "risk_permille": 150
+          },
+          {
+            "src": "V",
+            "dst": "G",
+            "heading": 2,
+            "action": "RIGHT",
+            "travel_ms": 500,
+            "turn_ms": 750,
+            "risk_cost_ms": 40,
+            "length_mm": 150,
+            "risk_permille": 5
+          }
+        ],
+        "nominal_time_ms": 6284,
+        "distance_mm": 1150,
+        "turn_count": 3,
+        "risk_proxy": 275,
+        "assumed_failure_probability": 0.25573999999999997,
+        "cost_unit": "ms"
+      },
+      "robust": {
+        "start": "S",
+        "goal": "G",
+        "start_heading": 1,
+        "policy": "robust",
+        "revision": 0,
+        "cost": 6935,
+        "steps": [
+          {
+            "src": "S",
+            "dst": "A",
+            "heading": 1,
+            "action": "STRAIGHT",
+            "travel_ms": 667,
+            "turn_ms": 0,
+            "risk_cost_ms": 40,
+            "length_mm": 200,
+            "risk_permille": 5
+          },
+          {
+            "src": "A",
+            "dst": "B",
+            "heading": 0,
+            "action": "LEFT",
+            "travel_ms": 667,
+            "turn_ms": 950,
+            "risk_cost_ms": 40,
+            "length_mm": 200,
+            "risk_permille": 5
+          },
+          {
+            "src": "B",
+            "dst": "C",
+            "heading": 1,
+            "action": "RIGHT",
+            "travel_ms": 667,
+            "turn_ms": 750,
+            "risk_cost_ms": 40,
+            "length_mm": 200,
+            "risk_permille": 5
+          },
+          {
+            "src": "C",
+            "dst": "D",
+            "heading": 0,
+            "action": "LEFT",
+            "travel_ms": 667,
+            "turn_ms": 950,
+            "risk_cost_ms": 40,
+            "length_mm": 200,
+            "risk_permille": 5
+          },
+          {
+            "src": "D",
+            "dst": "G",
+            "heading": 1,
+            "action": "RIGHT",
+            "travel_ms": 667,
+            "turn_ms": 750,
+            "risk_cost_ms": 40,
+            "length_mm": 200,
+            "risk_permille": 5
+          }
+        ],
+        "nominal_time_ms": 6735,
+        "distance_mm": 1000,
+        "turn_count": 4,
+        "risk_proxy": 25,
+        "assumed_failure_probability": 0.02475124687812491,
+        "cost_unit": "ms"
+      }
+    }
+  }
+]

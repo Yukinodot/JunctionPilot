@@ -1,0 +1,12 @@
+{
+  "title":"局部风险与绕行（自建练习图）",
+  "nodes":[{"id":"S","x":0,"y":1},{"id":"C","x":1,"y":1},{"id":"G","x":2,"y":1},{"id":"A","x":0,"y":2},{"id":"B","x":1,"y":2},{"id":"D","x":2,"y":2}],
+  "edges":[
+    {"src":"S","dst":"C","length_mm":200,"risk_permille":300,"bidirectional":true},
+    {"src":"C","dst":"G","length_mm":200,"risk_permille":300,"bidirectional":true},
+    {"src":"S","dst":"A","length_mm":200,"risk_permille":5,"bidirectional":true},
+    {"src":"A","dst":"B","length_mm":200,"risk_permille":5,"bidirectional":true},
+    {"src":"B","dst":"D","length_mm":200,"risk_permille":5,"bidirectional":true},
+    {"src":"D","dst":"G","length_mm":200,"risk_permille":5,"bidirectional":true}
+  ]
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "event": "PLAN",
+    "state": "READY",
+    "node": "S",
+    "heading": 1,
+    "revision": 0,
+    "reachable": true
+  },
+  {
+    "event": "COMMAND",
+    "state": "MOVING",
+    "node": "S",
+    "heading": 1,
+    "revision": 0,
+    "action": "LEFT",
+    "destination": "U"
+  },
+  {
+    "event": "OBSTACLE",
+    "state": "HOLD",
+    "node": "S",
+    "heading": 1,
+    "revision": 1,
+    "src": "S",
+    "dst": "U"
+  },
+  {
+    "event": "NEEDS_LOCALIZATION",
+    "state": "HOLD",
+    "node": "S",
+    "heading": 1,
+    "revision": 1
+  },
+  {
+    "event": "POSE_CONFIRMED",
+    "state": "HOLD",
+    "node": "S",
+    "heading": 1,
+    "revision": 1
+  },
+  {
+    "event": "PLAN",
+    "state": "READY",
+    "node": "S",
+    "heading": 1,
+    "revision": 1,
+    "reachable": true
+  }
+]

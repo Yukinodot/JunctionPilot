@@ -1,0 +1,10 @@
+{
+  "speed_mm_s": 300,
+  "left_ms": 850,
+  "right_ms": 650,
+  "uturn_ms": 1600,
+  "settle_ms": 100,
+  "vehicle_width_mm": 150,
+  "clearance_mm": 20,
+  "risk_penalty_ms": 8000
+}

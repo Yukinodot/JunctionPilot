@@ -1,0 +1,29 @@
+test_junction_obstacle_replans (test_system.MissionTests.test_junction_obstacle_replans) ... ok
+test_mid_edge_obstacle_requires_pose (test_system.MissionTests.test_mid_edge_obstacle_requires_pose) ... ok
+test_normal_mission_arrives (test_system.MissionTests.test_normal_mission_arrives) ... ok
+test_relocalize_and_replan (test_system.MissionTests.test_relocalize_and_replan) ... ok
+test_stale_plan_is_rejected (test_system.MissionTests.test_stale_plan_is_rejected) ... ok
+test_wrong_arrival_holds (test_system.MissionTests.test_wrong_arrival_holds) ... ok
+test_ambiguous_margin_clears_history (test_system.PerceptionGateTests.test_ambiguous_margin_clears_history) ... ok
+test_disagreement_does_not_confirm (test_system.PerceptionGateTests.test_disagreement_does_not_confirm) ... ok
+test_low_confidence_clears_history (test_system.PerceptionGateTests.test_low_confidence_clears_history) ... ok
+test_three_consistent_frames (test_system.PerceptionGateTests.test_three_consistent_frames) ... ok
+test_block_revises_graph_without_mutation (test_system.PlannerTests.test_block_revises_graph_without_mutation) ... ok
+test_clearance_inclusive_boundary (test_system.PlannerTests.test_clearance_inclusive_boundary) ... ok
+test_exact_state_graph_oracle (test_system.PlannerTests.test_exact_state_graph_oracle) ... ok
+test_heading_changes_cost (test_system.PlannerTests.test_heading_changes_cost) ... ok
+test_invalid_graphs (test_system.PlannerTests.test_invalid_graphs) ... ok
+test_invalid_inputs (test_system.PlannerTests.test_invalid_inputs) ... ok
+test_left_right_uturn_and_straight (test_system.PlannerTests.test_left_right_uturn_and_straight) ... ok
+test_longer_route_can_save_turn_time (test_system.PlannerTests.test_longer_route_can_save_turn_time) ... ok
+test_no_route (test_system.PlannerTests.test_no_route) ... ok
+test_risk_detour (test_system.PlannerTests.test_risk_detour) ... ok
+test_roundtrip_uses_actual_final_heading (test_system.PlannerTests.test_roundtrip_uses_actual_final_heading) ... ok
+test_start_equals_goal (test_system.PlannerTests.test_start_equals_goal) ... ok
+test_vehicle_clearance_filters_edges (test_system.PlannerTests.test_vehicle_clearance_filters_edges) ... ok
+test_zero_risk_weight_agrees_with_fastest (test_system.PlannerTests.test_zero_risk_weight_agrees_with_fastest) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.059s
+
+OK

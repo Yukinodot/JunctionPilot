@@ -1,0 +1,6 @@
+COMPILE: C:\msys64\ucrt64\bin\gcc.exe -std=c11 -Wall -Wextra -Werror -O2 -shared firmware/jp_planner.c firmware/jp_guard.c -o build\jp_planner.dll
+
+
+CROSSCHECK: 600 / 600 exact route/cost/status matches
+status=0 cost=2284 ms steps=2 turns=1 workspace=2304 bytes
+stale plan guard: HOLD

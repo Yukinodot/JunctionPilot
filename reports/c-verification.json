@@ -1,0 +1,12 @@
+{
+  "compiler": "gcc.exe (Rev4, Built by MSYS2 project) 16.2.0",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "crosscheck_queries": 600,
+  "all_matched": true,
+  "workspace_bytes": 2304,
+  "graph_bytes": 2568,
+  "route_bytes": 6164,
+  "demo_exit_code": 0,
+  "warning_policy": "-Wall -Wextra -Werror",
+  "hardware_run": false
+}
